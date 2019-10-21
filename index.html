@@ -1,39 +1,161 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <title>julia's website</title>
 
+    <!-- Custom fonts and styles -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-<head>
-	<style>
+    <!-- Your Style and CSS goes here between the two style tags -->
+    <style>
+      
+    </style>
+  </head>
 
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
+      id="sideNav"
+    >
+      <!-- GIF -->
+      <a class="navbar-brand" href="https://github.com/c23jg1">
+        <img
+          class="img-fluid img-profile rounded-circle mx-auto mb-2"
+          src="https://media0.giphy.com/media/d1FL4zXfIQZMWFQQ/giphy.gif"
+        />
+      </a>
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#home">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#work">my work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#journal"
+              >code journal</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
 
+    <div class="container-fluid p-0">
+      <!-- Home Page -->
+      <section
+        class="resume-section p-3 p-lg-5 d-flex align-items-center"
+        id="home"
+      >
+        <div class="w-100">
+          <h1 class="mb-0">
+            julia's
+            <span class="text-primary">website</span>
+          </h1>
+        </div>
+      </section>
 
-		#julia {
-			border-radius:50%; 
-			width:200px;
-			height:200px;
-			background-color:#7FFFD4;
-			;		transition:1s;
+      <!-- The horizontal bar between pages -->
+      <hr class="m-0" />
 
-		}
+      <!-- My Work Page -->
+      <section
+        class="resume-section p-3 p-lg-5 d-flex justify-content-center"
+        id="work"
+      >
+        <div class="w-100">
+          <h2 class="mb-5">my work</h2>
 
-		#julia:hover{
-			border-radius:10%;
-			transition:1s;
-			background-color:#00FFFF;
+          <!-- Stoplight Card in My Work -->
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="resume-content">
+              <a href="streetlight.html"><h3 class="mb-0">stoplight</h3></a>
+              <br />
+              <p>
+                this coding project blah blah blah :)
+              </p>
+              
+            </div>
+          </div>
 
-		}
-	</style>
+          <!-- Other Work Card in My Work -->
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">other work</h3>
+              <div class="subheading mb-3">subheading if you want</div>
+              <p>
+                the main content with links to the github page and the actual
+                webpage below
+              </p>
+            
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary"
+                >if you want anything here you can</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
 
-</head>
-<body>
+      <!-- The horizontal bar between pages -->
+      <hr class="m-0" />
 
+      <!-- Code Journal Page -->
+      <section
+        class="resume-section p-3 p-lg-5 d-flex justify-content-center"
+        id="journal"
+      >
+        <div class="w-100">
+          <h2 class="mb-5">code journal</h2>
 
-<a href="">
+          <!-- example journal card in code journal -->
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">journal title</h3>
+              <div class="subheading mb-3">subheading if you want</div>
+              <p>
+                main journal text as a paragraph for example
+              </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">date</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
 
+    <!-- Your JavaScript goes here between the two script tags -->
+    <script>
+      
+    </script>
 
-</body>
+    <!-- JavaScript Plugins -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://kit.fontawesome.com/7beda1fc9b.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
-
-<div id="julia"></div>
-
-</a>

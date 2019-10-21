@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>street light</title>
+    <style>
+        #traffic {
+    width: 20%;
+    height: 82.5%;
+    border-radius: 10%;
+    background-color: black;
+    position: absolute;
+    left: 40%;
+    opacity: 0.8;
+}
+.light {
+    border-radius: 50%;
+    border: solid 1px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    position: relative;
+    left: 20%;
+    z-index:5;
+}
+#container {
+    /*		border:solid 3px;
+*/
+    position: relative;
+    top: 2%;
+}
+#first {
+    background-color: red;
+}
+#second{
+	background-color:yellow;
+}
+#third{
+	background-color:green;
+}
+.redFlash{
+	animation-name:red;
+	animation-duration:0.4s;
+	animation-iteration-count:infinite;
+}
+.greenFlash{
+    animation-name:green;
+    animation-duration:0.4s;
+    animation-iteration-count:infinite;
+}
+.yellowFlash{
+    animation-name:yellow;
+    animation-duration:0.4s;
+    animation-iteration-count:infinite;
+}
+@keyframes red{
+	from {background-color:tomato;}
+		to {background-color:red;}
+}
+@keyframes green{
+    from {background-color:lightgreen;}
+        to {background-color:green;}
+}
+@keyframes yellow{
+    from {background-color:lightyellow;}
+        to {background-color:yellow;}
+}
+</style>
+</head>
+
+<body>
+    <div id="traffic">
+        <div id="container">
+            <div class="light" id="first"></div>
+            <div class="light" id="second"></div>
+            <div class="light" id="third"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    var red = document.getElementById("first");
+    var yellow = document.getElementById("second");
+    var green = document.getElementById("third");
+    var redOnOrOff = false;
+    var greenOnOrOff = false;
+    var yellowOnOrOff = false;
+// below we are adding an event listener to the element with the id of "first" so that when we click on the div, we add a class called "flash" and that class has an animation that changes the color back and forth between tomato and red. There are so many other ways we could do this. We could instead of adding an event listener, actually go into the style of the div with the id of "first" and changed the background color from red to tomato and go back and forth.//
+// Julia this is a really tricky quesiton but since our event listener is with click, how could we possibly un-add the "flash" class when we click another time. It's tricky because in this case, everything is happening with the event of a "click". It's totally do-able...just a bit tricky:)
+    red.addEventListener("click", function() {
+        if(redOnOrOff == false) {
+            red.classList.add("redFlash");
+        } else {
+            red.classList.remove("redFlash");
+        }
+        
+        redOnOrOff = !redOnOrOff;
+    })
+
+    green.addEventListener("click", function() {
+        if(greenOnOrOff == false) {
+            green.classList.add("greenFlash");
+        } else {
+            green.classList.remove("greenFlash");
+        }
+        
+        greenOnOrOff = !greenOnOrOff;
+    })
+
+    yellow.addEventListener("click", function() {
+        if(yellowOnOrOff == false) {
+            yellow.classList.add("yellowFlash");
+        } else {
+            yellow.classList.remove("yellowFlash");
+        }
+        
+        yellowOnOrOff = !yellowOnOrOff;
+    })
+    </script>
+</body>
+
+</html>

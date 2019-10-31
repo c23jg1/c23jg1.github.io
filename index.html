@@ -1,124 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <title>julia's website</title>
-
     <!-- Custom fonts and styles -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
-
     <!-- Your Style and CSS goes here between the two style tags -->
     <style>
-      
+    h1 {
+        font-family: 'Saira Extra Condensed', sans-serif;
+        color: #495057;
+
+    }
+
+    .blue-text {
+        font-family: 'Saira Extra Condensed', sans-serif;
+        color: #51bde2;
+
+    }
+
+    #avocado {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        background-image: url("https://media0.giphy.com/media/d1FL4zXfIQZMWFQQ/giphy.gif");
+        background-size: cover;
+        background-color: blue;
+        background-repeat: no-repeat;
+
+    }
+
+    section {
+      position:absolute;
+      width:800px;
+      height: 100%;
+    
+    }
+
+    #section1
+    {
+      top: 0%
+    }
+       #section2
+    {
+      top: 100%;
+    }
     </style>
-  </head>
+</head>
 
-  <body> 
-
-    <div class="container-fluid p-0">
-      <!-- Home Page -->
-      <section
-        class="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="home"
-      >
-        <div class="w-100">
-          <h1 class="mb-0">
+<body>
+    <section id="section1">
+        <h1>
             julia's
-            <span class="text-primary">website</span>
-          </h1>
-        </div>
-  <a class="navbar-brand" href="https://github.com/c23jg1">
-        <img
-          class="img-fluid img-profile rounded-circle mx-auto mb-2"
-          src="https://media0.giphy.com/media/d1FL4zXfIQZMWFQQ/giphy.gif"
-        />
-      </section>
-
-      <!-- The horizontal bar between pages -->
-      <hr class="m-0" />
-
-      <!-- My Work Page -->
-      <section
-        class="resume-section p-3 p-lg-5 d-flex justify-content-center"
-        id="work"
-      >
+            <span class="blue-text">website</span>
+        </h1>
+        <div id="avocado"></div>
+    </section>
+    <!-- My Work Page -->
+    <section id="section2">
         <div class="w-100">
-          <h2 class="mb-5">my work</h2>
-
-          <!-- Stoplight Card in My Work -->
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <a href="streetlight.html"><h3 class="mb-0">streetlight</h3></a>
-              <br>
-              <p><a href="https://c23jg1.github.io/journal.html">journal</a></p>
-              
-            </div>
-          </div>
-
-          <!-- Other Work Card in My Work -->
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0">room design</h3>
-              <p>
-                <p><a href="room.html">room design</a></p>
-              </p>
-            
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- The horizontal bar between pages -->
-      <hr class="m-0" />
-
-      <!-- Code Journal Page -->
-      <section
-        class="resume-section p-3 p-lg-5 d-flex justify-content-center"
-        id="journal"
-      >
-        <div class="w-100">
-          <h2 class="mb-5">code journal</h2>
-
-          <!-- example journal card in code journal -->
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0">journal title</h3>
-              <div class="subheading mb-3">subheading if you want</div>
-              <p>
-                main journal text as a paragraph for example
-              </p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">date</span>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <!-- Your JavaScript goes here between the two script tags -->
+            <h2 class="mb-5">my work</h2>
+            <!-- Stoplight Card in My Work -->
+          
+                <a href="streetlight.html">
+                    <h3>streetlight</h3>
+                </a>
+                <a href="journal.html"><h3>journal</h3></a>
+                <a href="room.html">
+                    <h3>room design</h3>
+                </a>
+          
+    </section>
+    <!-- The horizontal bar between pages -->
     <script>
-      
     </script>
-
     <!-- JavaScript Plugins -->
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>

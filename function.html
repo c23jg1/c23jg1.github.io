@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arrays and Functions</title>
+</head>
+<body>
+	<style type="text/css">
+		#number {
+			font-family: Arial;
+			color: blue;
+		}
+		html {
+			background-color: lightblue;
+		}
+	</style>
+	<script>
+		var countries = ["Italy", "France", "Fiji", "America", "Bolivia", "Croatia", "Belgium", "Switzerland", "Austria", "Canada", "Prague", "Sweden"];
+		var randomNumber = 0;
+
+		var random = function() {
+			randomNumber = Math.round(Math.random() * 11);
+			document.getElementById("number").innerHTML = countries[randomNumber];
+		}
+	</script>
+	<center>
+		<h1 id="number">choose a random country</h1>
+		<button type="button" onclick="random()">random country!</button><br>
+		<img style="width: 500px; height: 500px" src="https://purepng.com/public/uploads/large/purepng.com-earth-planet-globe-worldnatureearthglobeplanetworld-961524677896ubxtw.png">
+	</center>
+</body>
+</html>

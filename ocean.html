@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+    .menu {
+        width: 100%;
+        height: 100px;
+        background-color: lightblue;
+
+    }
+
+    body {
+        margin: 0px;
+        background-image: url(1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .jelly {
+        width: 100px;
+        height: 100px;
+        background-color: lightpink;
+        position: relative;
+        display: inline-block;
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #jelly1 {
+        left: 5%;
+        top: 0%;
+        background-image: url("jelly1.jpg");
+    }
+
+    #jelly2 {
+        left: 100px; 
+        background-image:url("jelly2.jpg");
+    }
+
+    #jelly3 {
+        left: 50%;
+        background-image: url("jelly3.jpg");
+
+    }
+
+        #jelly1 {
+        width: 100px;
+        height: 100px;
+
+        }
+
+
+               #jelly3 {
+        width: 100px;
+        height: 100px;
+
+        }
+
+    /*    Left and top are x and y
+*/
+    </style>
+</head>
+<body>
+<div id="containter">
+    <audio  src="splash2.m4a" id="sound">
+    </audio>
+    <div class="menu">
+        <div class="jelly" id="jelly1">
+       
+
+        </div>
+        <div class="jelly" id="jelly2">
+        
+
+        </div>
+        <div class="jelly" id="jelly3">
+    
+
+        </div>
+        <center>
+            <h2 id="fact"></h2>
+        </center>
+        <audio id="shark" src="babyshark.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+</div>
+
+
+
+    <script type="text/javascript">
+
+    var sound = document.getElementById("sound");
+
+    var jelly1 = document.getElementById("jelly1");
+
+    jelly1.addEventListener("click", function() {
+        jelly1.style.top = "500px";
+        document.getElementById("fact").innerHTML = "Jellyfish have no brain"; 
+
+
+    });
+
+    var jelly2 = document.getElementById("jelly2");
+
+    jelly2.addEventListener("click", function() {
+        console.log("hi");
+        jelly2.style.top = "500px";
+                function moveLeft (){jelly2.style.left = parseInt(jelly2.style.left) + 25 + "px";}
+                setInterval(moveLeft, 1000);
+
+
+sound.play();
+
+    });
+
+
+
+    var jelly3 = document.getElementById("jelly3");
+
+    jelly3.addEventListener("click", function() {
+        jelly3.style.top = "500px";
+sound.play();
+
+    });
+    </script>
+</body>
+
+</html>

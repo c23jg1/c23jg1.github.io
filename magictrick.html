@@ -12,7 +12,7 @@
 			background-repeat:no-repeat;
 			display:inline-block;
 			position: absolute;
-			transition: all 1s;
+			transition: all 4s;
 		}
 		
 	</style>
@@ -22,25 +22,26 @@
 	<div class="flamingo"></div>
 
 	<script>
-	
 	function makeFlamingo (flamingo) {
+		flamingo.style.left = Math.random() * 1000 + "px";
+		flamingo.style.top = Math.random() * 1000 + "px";
 
+		var size = Math.random() * 50 + "px";
+		flamingo.style.height = size;
+		flamingo.style.width = size;
+
+		setTimeout(function () {
+			makeFlamingo(flamingo)
+		}, 1000, flamingo);
+	}
+
+	for(var i = 0; i<1000; i++){ 
 		var flamingo = document.createElement("div");
 		document.body.appendChild(flamingo);
 		flamingo.classList.add("flamingo");
 
-
-		var movement = Math.random() * 1000;
-		var topmovement = Math.random() * 1000;
-		flamingo.style.left = movement + "px";
-		flamingo.style.top = topmovement + "px";
-		setTimeout(() => makeFlamingo(flamingo), 2000, flamingo);
-	}
-
-	for(var i = 0; i<1000; i++){ makeFlamingo()
-		
+		makeFlamingo(flamingo);
 	};
-
 </script>
 
 </body>

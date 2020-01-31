@@ -24,6 +24,12 @@
 	<script>
 	
 	function makeFlamingo (flamingo) {
+
+		var flamingo = document.createElement("div");
+		document.body.appendChild(flamingo);
+		flamingo.classList.add("flamingo");
+
+
 		var movement = Math.random() * 1000;
 		var topmovement = Math.random() * 1000;
 		flamingo.style.left = movement + "px";
@@ -31,12 +37,9 @@
 		setTimeout(() => makeFlamingo(flamingo), 2000, flamingo);
 	}
 
-	for(var i = 0; i<1000; i++){
-		var flamingo = document.createElement("div");
-		document.body.appendChild(flamingo);
-		flamingo.classList.add("flamingo");
-		makeFlamingo(flamingo);
-	}
+	for(var i = 0; i<1000; i++){ makeFlamingo()
+		
+	};
 
 </script>
 

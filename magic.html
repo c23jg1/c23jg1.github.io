@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Magic</title>
+	<style>
+		
+		.flamingo{
+			width: 100px;
+			height: 100px;
+			background-image:url(flamingo.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			display: inline-block;
+			position:absolute;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="flamingo"></div>
+
+	<script type="text/javascript">
+		function makeFlamingo (){
+			var flamingo = document.createElement("div"); 
+			flamingo.classList.add("flamingo");
+			flamingo.style.left = Math.random()*1000 + "px";
+			flamingo.style.top = Math.random()*1000 + "px";
+		}
+
+		for (var i=0; i<100; i++) { // makes several
+			makeFlamingo();
+		}
+	</script>
+	
+</body>
+</html>

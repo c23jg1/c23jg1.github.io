@@ -15,11 +15,23 @@
 			transition: all 4s;
 		}
 		
+
+	#button{
+	width:100px;
+	height:100px;
+	background-color:pink;
+	z-index:2;
+}
 	</style>
 </head>
 <body>
 
 	<div class="flamingo"></div>
+
+	<div id="flamingo">
+		<div id="button"></div>
+		<div id="invis"></div>
+	</div>
 
 	<script>
 	function makeFlamingo (flamingo) {
@@ -41,7 +53,14 @@
 		flamingo.classList.add("flamingo");
 
 		makeFlamingo(flamingo);
-	};
+
+		var button = document.getElementById("button");
+	button.addEventListener("click", function disappear(){
+		flamingo.classList.remove("flamingo");
+	});
+}
+
+
 </script>
 
 </body>

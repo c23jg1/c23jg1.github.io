@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style>
+		#character{
+			width:700px;
+			height:700px;
+			background-repeat: no-repeat;
+			background-position: center;
+			object-fit: scale-down;
+
+		}
+
+</style>
+</head>
+<body>
+
+<div id="character">
+	<a>click under here to get a star wars character to pop up!</a>
+
+</div>
+
+<script type="text/javascript">
+	var character = document.getElementById("character");
+
+	var characters = ["url(starwars1.png)", "url(starwars2.png)", "url(starwars3.png)", "url(starwars4.png)", "url(starwars5.png)"];
+
+	character.addEventListener("click", function(){randomNumber = Math.round(Math.random()*5)
+
+	character.style.backgroundImage = characters[randomNumber]
+		console.log(event);
+
+
+	});
+
+
+</script>
+
+</body>
+</html>
